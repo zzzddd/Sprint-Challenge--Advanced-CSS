@@ -1,1 +1,39 @@
 // Navigation code here
+
+.navgation{
+   
+        border-bottom: 1px solid black;
+        margin: 20px 0;
+        padding: 20px 0;
+        display: flex;
+        .center();
+        @media @phone {
+              flex-direction: column;
+              align-items: center;
+              .center()
+        }
+        h1 {
+            font-size: 2rem;
+            
+            @media @phone {
+              margin-bottom: 20px;
+              .center();
+            }
+          }
+          nav{
+            margin-left: 62px;
+            background-color: @nav-bg;
+            color: @nav-font;
+            border: @nav-border;
+            @media @phone{
+                margin-left: 0;
+                .center();
+            }
+            a {
+              margin-left: 20px;
+              font-size: 1.8rem;
+            }
+          }
+        }
+
+       
