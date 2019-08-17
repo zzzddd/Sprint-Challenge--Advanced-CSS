@@ -1,7 +1,7 @@
 .center {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -166,19 +166,18 @@ p {
   margin: 0 auto;
 }
 .navgation {
-  border-bottom: 1px solid black;
-  margin: 20px 0;
-  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 @media (max-width: 500px) {
   .navgation {
     flex-direction: column;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
   }
 }
 .navgation h1 {
@@ -189,26 +188,34 @@ p {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    font-size: 5rem;
   }
 }
 .navgation nav {
-  margin-left: 62px;
   background-color: #F6F6F6;
+  padding: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
   color: #454A59;
-  border: #F1F1F1;
 }
 @media (max-width: 500px) {
   .navgation nav {
     margin-left: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
   }
-}
-.navgation nav a {
-  margin-left: 20px;
-  font-size: 1.8rem;
+  .navgation nav a {
+    padding: 2px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 }
 footer {
   color: #81848E;
@@ -218,7 +225,7 @@ footer {
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 @media (max-width: 500px) {
   .home .intro {
@@ -267,9 +274,10 @@ footer {
 @media (max-width: 500px) {
   .visit-planets {
     flex-direction: column;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
   }
 }
 .visit-planets h3 {
@@ -291,10 +299,10 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 .walk .walk-text {
-  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -315,21 +323,32 @@ footer {
   height: 45px;
   font-size: 2rem;
   border-radius: 10px;
+  text-align: center;
+  padding-top: 2%;
 }
-.walk .walk-text:hover {
+.walk .walk-text .btn:hover {
   background-color: #454A59;
   color: #23293B;
 }
+@media (max-width: 500px) {
+  .walk .walk-text .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
 .walk .walk-img {
-  width: 46%;
+  width: 100;
   margin-left: 4%;
+  display: flex;
 }
 @media (max-width: 500px) {
   .walk .walk-img {
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-content: center;
   }
 }
 .walk .walk-img img {

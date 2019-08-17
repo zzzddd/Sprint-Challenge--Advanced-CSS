@@ -71,11 +71,13 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    
     @media @phone {
       .centercolumn();
+      flex-direction: column-reverse;
     }
     .walk-text {
-      width: 50%;
+      
       .centercolumn();
 
       h3 {
@@ -87,20 +89,27 @@
       }
 
       .btn {
-        .btn-signup(200px,@btn-bg-color)
+        .btn-signup(200px,@btn-bg-color);
+        &:hover{
+          background-color:@river-bend;
+          color:@ebony-clay;
+        }
+        @media @phone {
+          width: 100%;
+          .center();
+        }
         
       }
-      &:hover{
-        background-color:@river-bend;
-        color:@ebony-clay;
-      }
+     
     }
 
     .walk-img {
-      width: 46%;
+      width: 100;
       margin-left: 4%;
+      display: flex;
       @media @phone {
-        .centercolumn();
+        width: 100%;
+        .center();
       }
       
       img {
