@@ -1,2 +1,31 @@
 // Navigation code here
 
+.navgation {
+  .centercolumn(center);
+
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
+  color: #454a59;
+  background-color: @wild-sand;
+  h1 {
+    font-size: 4.1rem;
+     color:@ebony-clay;  }
+  nav {
+    padding: 20px;
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;  
+    .center();
+    justify-content: space-around;
+    @media @phone {
+       width: 100%;
+      }
+    a {
+      text-decoration: none;
+      color: @nav-font;
+    }
+  }
+}
