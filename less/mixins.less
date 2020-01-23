@@ -1,1 +1,25 @@
 // Mixins Here
+.center(){
+    display: flex;
+    justify-content: center;
+     align-content: center;
+}
+.centercolumn(@align){
+    display: flex;
+    justify-content: center;
+    align-items:@align;
+    flex-direction: column;
+}
+.btn-signup(@width:200px,@bgc:gray){
+    display: block;
+    background-color: @bgc;
+    margin: 0 0px 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 2%;
+   }
+   @phone: ~'(max-width: 500px)';
